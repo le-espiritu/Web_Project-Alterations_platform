@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+  				<!-- 보드 작업으로 리스폰스 될 페이지를 등록하는 설정파일 -->
+  	<definition name="board/list" extends="boardTemplate">
+  		<put-attribute name="top" value="/WEB-INF/include/vividi_top.jsp"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/board/boardlist.jsp"></put-attribute> 
+	</definition>	
+	
+	<definition name="board/noticelist" extends="boardTemplate">
+  		<put-attribute name="top" value="/WEB-INF/include/vividi_top.jsp"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/board/noticelist.jsp"></put-attribute> 
+	</definition> 
+	
+	<definition name="board/reviewlist" extends="boardTemplate">
+  		<put-attribute name="top" value="/WEB-INF/include/vividi_top.jsp"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/board/reviewlist.jsp"></put-attribute> 
+	</definition> 
+	
+	<definition name="board/insert" extends="boardTemplate">
+		<put-attribute name="top" value="/WEB-INF/include/vividi_top3.jsp"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/board/board_write.jsp"></put-attribute> 
+	</definition>
+	
+	<definition name="board/read" extends="boardTemplate">
+		<put-attribute name="top" value="/WEB-INF/include/vividi_top3.jsp"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/board/board_read.jsp"></put-attribute> 
+	</definition>
+	
+	<definition name="board/update" extends="boardTemplate">
+		<put-attribute name="top" value="/WEB-INF/include/vividi_top.jsp"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/board/board_update.jsp"></put-attribute> 
+	</definition>
+	
+	<definition name="board/noticeread" extends="boardTemplate">
+		<put-attribute name="top" value="/WEB-INF/include/vividi_top3.jsp"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/board/board_noticeread.jsp"></put-attribute> 
+	</definition>
+	
+	<definition name="board/noticeupdate" extends="boardTemplate">
+		<put-attribute name="top" value="/WEB-INF/include/vividi_top.jsp"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/board/board_noticeupdate.jsp"></put-attribute> 
+	</definition>
+	
+	<definition name="board/reviewread" extends="boardTemplate">
+		<put-attribute name="top" value="/WEB-INF/include/vividi_top3.jsp"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/board/board_reviewread.jsp"></put-attribute> 
+	</definition>
+	
+	<definition name="board/reviewupdate" extends="boardTemplate">
+		<put-attribute name="top" value="/WEB-INF/include/vividi_top.jsp"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/board/board_reviewupdate.jsp"></put-attribute> 
+	</definition>
+	
+	<definition name="board/noticeinsert" extends="boardTemplate">
+		<put-attribute name="top" value="/WEB-INF/include/vividi_top3.jsp"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/board/board_noticewrite.jsp"></put-attribute> 
+	</definition>
+	
+	<definition name="board/noticeread" extends="boardTemplate">
+		<put-attribute name="top" value="/WEB-INF/include/vividi_top3.jsp"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/board/board_noticeread.jsp"></put-attribute> 
+	</definition>
+	
+	<definition name="board/reviewinsert" extends="boardTemplate">
+		<put-attribute name="top" value="/WEB-INF/include/vividi_top3.jsp"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/board/board_reviewwrite.jsp"></put-attribute> 
+	</definition>
+	
+	<definition name="board/reviewread" extends="boardTemplate">
+		<put-attribute name="top" value="/WEB-INF/include/vividi_top3.jsp"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/board/board_reviewread.jsp"></put-attribute> 
+	</definition>
+	
+			
+  				
+</tiles-definitions>

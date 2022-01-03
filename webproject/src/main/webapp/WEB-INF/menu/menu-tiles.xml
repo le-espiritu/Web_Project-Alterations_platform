@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+       
+<tiles-definitions>
+	
+	<definition name="menu/login" extends="mainTemplate">
+		<put-attribute name="top" value="/WEB-INF/include/vividi_top3.jsp"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/menu/login.jsp"></put-attribute>
+	</definition>
+	
+	
+	<definition name="menu/join" extends="mainTemplate">
+		<put-attribute name="top" value="/WEB-INF/include/vividi_top3.jsp"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/menu/join.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="menu/shop_join" extends="mainTemplate">
+		<put-attribute name="top" value="/WEB-INF/include/vividi_top3.jsp"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/menu/shop_join.jsp"></put-attribute>
+	</definition>
+	
+	
+	
+</tiles-definitions>
+

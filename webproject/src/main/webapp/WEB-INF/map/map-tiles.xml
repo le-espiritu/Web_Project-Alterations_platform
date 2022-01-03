@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+       
+<tiles-definitions>
+	
+	<definition name="map/search" extends="mainTemplate">
+		<put-attribute name="top" value="/WEB-INF/include/vividi_top.jsp"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/map/vividi_search.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="map/area_list" extends="mainTemplate">
+		<put-attribute name="top" value="/WEB-INF/include/vividi_top.jsp"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/map/vividi_list.jsp"></put-attribute>
+	</definition>
+	
+	
+	
+</tiles-definitions>
+

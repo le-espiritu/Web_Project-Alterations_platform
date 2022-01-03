@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  <mapper namespace="webproject.map"><!-- namespace는 맘대로 줘도 된다. -->
+  	
+  	<select id="list" resultType="store">
+  		select * from store
+  	</select>
+  	
+  	<!-- <select id="area" parameterType="String" resultType="store">
+  		select * from store where area=#{area}
+  	</select> -->
+  	
+  	<select id="area" parameterType="String" resultType="store">
+  		select * from store where area like #{area}
+  	</select>
+  	
+  	<select id="detail" parameterType="String" resultType="store">
+  		select * from store where str_code=#{str_code}
+  	</select>
+  	
+  	<select id="detailforTop5" parameterType="String" resultType="store">
+  		select * from store where str_code=#{str_code}
+  	</select>
+  	
+  	
+  	
+  </mapper>

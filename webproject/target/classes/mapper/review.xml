@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  <mapper namespace="webproject.review"><!-- namespace는 맘대로 줘도 된다. -->
+  	
+  	<insert id="insert" parameterType="review">
+  		insert into review values(review_seq.nextval,#{str_code},#{area},#{storeName},#{category},#{id},#{content},to_number(#{score}),sysdate)
+  	</insert>
+  	
+  	<insert id="fakeInsert" parameterType="String">
+  		insert into review values(review_seq.nextval,#{str_code},'fake','fake','fake','manager','content','',sysdate)
+  	</insert>
+  	
+  	<select id="list" parameterType="String" resultType="review">
+  		select * from review where str_code=#{str_code} and id != 'manager'
+  	</select>
+  	
+  	<select id="top5list" parameterType="String" resultType="review">
+  		Select str_code, storename, sum(score) from review where category=#{category} group by str_code, storename order by sum(score) desc
+  	</select>
+  	
+  	<select id="areatop5list" parameterType="review" resultType="review">
+  		Select str_code, storename, sum(score) from review where category=#{category} and area=#{area} group by str_code, storename order by sum(score) desc
+  	</select>
+  
+  	<select id="selectavgscore" parameterType="String" resultType="int">
+  		Select avg(score) from review where str_code=#{str_code} group by str_code
+  	</select>
+  	
+  	
+  </mapper>
